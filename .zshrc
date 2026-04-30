@@ -91,11 +91,11 @@ bindkey '\eOF'    end-of-line        # gnome-terminal
 #------------------------------------#
 
 
-#--------------- GO-PATH ------------#
+#--------------- GO-PATH ---------------#
 
 export PATH="$PATH:$(go env GOPATH)/bin"
 
-#------------------------------------#
+#---------------------------------------#
 
 source $DOTFILES/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
