@@ -25,13 +25,6 @@
 
 #--------------- ALIASES ------------#
 
-    alias grep='grep --color=auto'
-    alias valg='valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes'
-    alias projects='cd $projects'
-    alias makec='$projects/makec_files/makec'
-    alias boo='ghostty +boo'
-
-
     alias ls='ls -lh --color=auto'
     alias rm='rm -v'
     alias rmdir='rmdir -v'
@@ -39,6 +32,7 @@
     alias valg='valgrind  --leak-check=full  --show-leak-kinds=all  --track-origins=yes'
     alias projects='cd $projects'
     alias makec='$projects/makec_files/makec'
+    alias boo='ghostty +boo'
     alias wall-paper="~/wallpaper"
     alias open='xdg-open'
     alias pyserv='python -m http.server'
