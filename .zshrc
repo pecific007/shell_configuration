@@ -1,7 +1,7 @@
 # Created by newuser for 5.9
 # Some of .zshrc and .zshenv is taken from https://github.com/Phantas0s/.dotfiles/tree/master/zsh
 
-#--------- NAVIGATION ---------#
+#---------- SETOPTS -----------#
 
     setopt AUTO_CD             # Go to folder path without using cd.
     setopt AUTO_PUSHD          # Push the old directory onto the stack on cd.
@@ -41,6 +41,7 @@
 
 
 #--------------- GIT ------------#
+#----------------- GIT -----------------#
 
 autoload -Uz compinit && compinit
 autoload -Uz colors && colors
@@ -57,7 +58,7 @@ zstyle ':vcs_info:git:*' stagedstr '✓'
 zstyle ':vcs_info:git:*' formats ' (%b) %u %c'
 zstyle ':vcs_info:git:*' actionformats ' (%b|%a)%u %c'
 
-#------------------------------------#
+#---------------------------------------#
 
 #--------------- PROMPT ------------#
 
@@ -97,7 +98,11 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 #---------------------------------------#
 
+#--------------- ZSH_PLURINGS ---------------#
+
 source $DOTFILES/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#-------------------------------------------#
 
 
 # This will prevent the error message when SU-ing
