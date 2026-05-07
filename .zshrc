@@ -40,7 +40,6 @@
 #------------------------------------#
 
 
-#--------------- GIT ------------#
 #----------------- GIT -----------------#
 
 autoload -Uz compinit && compinit
@@ -88,6 +87,7 @@ bindkey '\e[4~'   end-of-line        # Linux console
 bindkey '\e[F'    end-of-line        # xterm
 bindkey '\eOF'    end-of-line        # gnome-terminal
 
+bindkey -v
 
 #------------------------------------#
 
