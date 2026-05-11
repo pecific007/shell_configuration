@@ -65,8 +65,13 @@ COLOR_RED='%F{red}'
 COLOR_CYAN='%F{cyan}'
 COLOR_RESET='%f'
 
-PROMPT="${COLOR_CYAN}"' %2~'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET}"$'\n> '
-# PROMPT=$'┌─'"${COLOR_RED}"'@%m:'"${COLOR_CYAN}"'[ %1~ ]'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET}"$':\n└$ '
+# Different prompt for root vs normal user
+if [[ $EUID -eq 0 ]]; then
+    PROMPT="${COLOR_CYAN}"' %2~'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET} (root)"$'\n> '
+else
+    PROMPT="${COLOR_CYAN}"' %2~'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET}"$'\n> '
+fi
+# PROMPT=$'┌─'"${COLOR_RED}"'@%m:'"${COLOR_CYAN}"'[ %1~ ]'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET}"$':\n└$ ' # Old prompt
 
 #------------------------------------#
 
