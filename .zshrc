@@ -19,6 +19,7 @@
 #------------------- ALIASES -> Variables -------------------#
 
     projects='/run/media/prashant/Prashant/Code_projects/'
+    progs='/run/media/prashant/Prashant/Code_projects/'
 
 #------------------------------------------------------------#
 
@@ -31,6 +32,7 @@
     alias grep='grep --color=auto'
     alias valg='valgrind  --leak-check=full  --show-leak-kinds=all  --track-origins=yes'
     alias projects='cd $projects'
+    alias progs='cd $projects'
     alias makec='$projects/makec_files/makec'
     alias boo='ghostty +boo'
     alias wall-paper="~/wallpaper"
@@ -92,7 +94,7 @@ bindkey '\e[4~'   end-of-line        # Linux console
 bindkey '\e[F'    end-of-line        # xterm
 bindkey '\eOF'    end-of-line        # gnome-terminal
 
-bindkey -v
+bindkey -v  # Vim mode: ESC can do navigation & `i`, `o`, `a` + SHIFT all work as expected too
 
 #------------------------------------#
 
@@ -103,7 +105,7 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 #---------------------------------------#
 
-#--------------- ZSH_PLURINGS ---------------#
+#--------------- ZSH_PLUGINGS ---------------#
 
 source $DOTFILES/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
