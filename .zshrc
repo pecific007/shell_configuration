@@ -18,7 +18,6 @@
 
 #------------------- ALIASES -> Variables -------------------#
 
-    projects='/run/media/prashant/Prashant/Code_projects/'
     progs='/run/media/prashant/Prashant/Code_projects/'
 
 #------------------------------------------------------------#
@@ -31,7 +30,6 @@
     alias rmdir='rmdir -v'
     alias grep='grep --color=auto'
     alias valg='valgrind  --leak-check=full  --show-leak-kinds=all  --track-origins=yes'
-    alias projects='cd $projects'
     alias progs='cd $projects'
     alias makec='$projects/makec_files/makec'
     alias boo='ghostty +boo'
@@ -69,7 +67,7 @@ COLOR_RESET='%f'
 
 # Different prompt for root vs normal user
 if [[ $EUID -eq 0 ]]; then
-    PROMPT="${COLOR_CYAN}"' %2~'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET} (root)"$'\n> '
+    PROMPT="${COLOR_CYAN}"' %2~'"${COLOR_RED}"' [root]'"${COLOR_RESET}"$'\n# '
 else
     PROMPT="${COLOR_CYAN}"' %2~'"${COLOR_RED}"'${vcs_info_msg_0_}'"${COLOR_RESET}"$'\n> '
 fi
