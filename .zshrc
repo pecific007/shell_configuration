@@ -30,12 +30,13 @@
     alias rmdir='rmdir -v'
     alias grep='grep --color=auto'
     alias valg='valgrind  --leak-check=full  --show-leak-kinds=all  --track-origins=yes'
-    alias progs='cd $projects'
+    alias progs='cd $progs'
     alias makec='$projects/makec_files/makec'
     alias boo='ghostty +boo'
     alias wall-paper="~/wallpaper"
     alias open='xdg-open'
     alias pyserv='python -m http.server'
+    alias tmux='tmux -u'
 
 #------------------------------------#
 
