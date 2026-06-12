@@ -37,6 +37,7 @@
     alias open='xdg-open'
     alias pyserv='python -m http.server'
     alias tmux='tmux -u'
+    alias fize='du -sh'
 
 #------------------------------------#
 
