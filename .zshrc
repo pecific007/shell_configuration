@@ -18,7 +18,8 @@
 
 #------------------- ALIASES -> Variables -------------------#
 
-    progs='/run/media/prashant/Prashant/Code_projects/'
+    personal='~/Personal'
+    progs='~/Projects'
 
 #------------------------------------------------------------#
 
@@ -31,13 +32,15 @@
     alias grep='grep --color=auto'
     alias valg='valgrind  --leak-check=full  --show-leak-kinds=all  --track-origins=yes'
     alias progs='cd $progs'
+    alias projects='cd $progs'
+    alias pers='cd $personal'
     alias makec='$projects/makec_files/makec'
     alias boo='ghostty +boo'
     alias wall-paper="~/wallpaper"
     alias open='xdg-open'
     alias pyserv='python -m http.server'
     alias tmux='tmux -u'
-    alias fize='du -sh'
+    alias dush='du -sh'
 
 #------------------------------------#
 
