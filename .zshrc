@@ -18,8 +18,8 @@
 
 #------------------- ALIASES -> Variables -------------------#
 
-    personal='~/Personal'
-    progs='~/Projects'
+    personal='/home/prashant/Personal/'
+    progs='/home/prashant/Projects/'
 
 #------------------------------------------------------------#
 
@@ -34,13 +34,13 @@
     alias progs='cd $progs'
     alias projects='cd $progs'
     alias pers='cd $personal'
-    alias makec='$projects/makec_files/makec'
     alias boo='ghostty +boo'
     alias wall-paper="~/wallpaper"
     alias open='xdg-open'
     alias pyserv='python -m http.server'
     alias tmux='tmux -u'
     alias dush='du -sh'
+    alias imgv='~/Projects/c-lang/imgv/imgv'
 
 #------------------------------------#
 
